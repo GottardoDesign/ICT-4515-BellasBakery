@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Reset*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 0px;
+	list-style: square;
+}
+nav ul {
+	padding-left: 0px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End Reset*/
+/*Fonts and Typography*/
+@font-face {font-family: poppins,sans-serif;font-weight: 400;font-style: italic;}
+@font-face {font-family: poppins,sans-serif;font-weight: 400;font-style: normal;}
+@font-face {font-family: poppins,sans-serif;font-weight: 500;font-style: italic;}
+@font-face {font-family: poppins,sans-serif;font-weight: 500;font-style: normal;}
+@font-face {font-family: poppins,sans-serif;font-weight: 600;font-style: italic;}
+@font-face {font-family: poppins,sans-serif;font-weight: 600;font-style: normal;}
+@font-face {font-family: poppins,sans-serif;font-weight: 700;font-style: italic;}
+@font-face {font-family: poppins,sans-serif;font-weight: 700;font-style: normal;}
+h1,h2,h3,h4,h5,h6,p,a,button,li {font-family:'poppins', helvetica, arial, sans-serif;}
+/*End Fonts and Typography*/
+/*Global Elements*/
+body {background-color:#F5F5F5;font-size:16px;line-height:20px;}
+main {margin:0px 10% 0px 10%;}
+section {margin-bottom:24px;}
+h1 {font-size: 2.5em; line-height: 1em; margin-bottom: 16px;}
+	/*Navigation*/
+	nav {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items:center; width: 100%;background-color: #ffffff;box-shadow: 0px 3px 3px rgba(0,0,0,0.25);padding:24px 10% 24px 10%;box-sizing: border-box;font-size: 20px; position: relative; z-index: 10;}
+		.nav-logo {width: 150px;}
+		.logo {width:100%;}
+		nav a {padding:12px 24px;margin:12px;color:#3E2100;font-weight:500;text-decoration: none;transition: all ease-out 0.2s;-webkit-transition: all ease-out 0.2s;-moz-transition: all ease-out 0.2s;}
+		nav .nav-links a:last-of-type {background-color: #D10000;border-radius:4px;color:#fff;text-decoration: none;transition: all ease-out 0.2s;-webkit-transition: all ease-out 0.2s;-moz-transition: all ease-out 0.2s;}
+		nav .nav-links a:hover {border-bottom:solid 4px #005500;}
+		nav .nav-links a:last-of-type:hover {background-color:#7A0000; font-weight:500; border-bottom:none;}
+	/*Footer*/
+	footer {background-color:#3E2100;padding: 48px 10% 48px 10%;margin-top:64px; color:#fff; display:flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items:center;}
+	.footer-logo {width: 200px;}
+	.bottom-logo {width:75%; margin-bottom:12px;}
+	.footer-links {display: flex;}
+	.footer-col {margin-left:32px;}
+	h4 {margin-bottom: 12px;}
+	footer p {margin-bottom: 8px;}
+	footer a {color:#fff; text-decoration:none;transition: all ease-out 0.2s;-webkit-transition: all ease-out 0.2s;-moz-transition: all ease-out 0.2s;}
+	footer a:hover {text-decoration: underline;}
+	.social-thumb {width:16px;margin-right:8px;position:relative;top:2px; color:#fff;}
+/*Main Content Section*/
+h2 {font-size: 1.5em; line-height: 2em;color:#3E2100; }
+.card-items {display:flex;}
+h3 {font-size:1em; line-height: 1.5em; margin-bottom: 12px;}
+.card {width:25%;padding:12px;box-sizing: border-box; background-color:#fff;box-shadow: 0px 3px 3px rgba(0,0,0,0.15);margin:0px 12px 0px 12px;border-radius:4px;}
+.card:first-of-type {margin-left: 0px;}
+.card:last-of-type {margin-right:0px;}
+.button {display: block; background-color: #D10000; text-align:center; border-radius:4px;color:#fff; box-sizing: border-box; padding:12px; text-decoration: none; transition: all ease-out 0.2s;-webkit-transition: all ease-out 0.2s;-moz-transition: all ease-out 0.2s;}
+.button:hover {background-color:#7A0000; border-bottom:none;}
+.item-img {width:100%; margin-bottom:12px;}
+header {background-color:#005500; /*margin-bottom: 48px;*/padding:24px 10% 24px 10%; color: #fff; position: relative; z-index: 9;}
+.no-space {margin: 0px; padding: 0px;}
+section#community {background-color:#005500; heoght:200px; color:#fff; padding:24px; box-sizing: border-box; display:flex; align-content: center; justify-content: center;}
+section#community article {width:50%;margin-right: 24px; display: block; align-self: center;}
+section#community article p {margin-bottom:16px;}
+section#community h2 {color:#fff;}
+section#community aside {width:50%; margin-top:-48px; margin-bottom: -48px;}
+.half-img {width:100%;}
+section#popular {margin-bottom:66px;}
+.btn-half {width:50%; background-color:#383838;}
+.btn-half:hover {background-color:#000;}
+/*Hero*/
+section#hero {margin:0px -13% 24px -13%;}
+section#hero article {margin:24px 10% 0px 10%; background-color:#7A0000; color:#fff; padding:24px; width:40%; position: relative; z-index: 20; top:50px; border-radius: 4px;}
+section#hero h2 {color:#fff;}
+section#hero article p {margin-bottom:24px;}
+.hero-background {width:100%; position: relative; z-index: 19; margin-top:-230px}
+.hero-background img {width:100%;}
+@media ( max-width : 1150px ){
+	main {margin-left:5%; margin-right:5%;}
+	nav {padding-left:5%; padding-right:5%;}
+	header {padding-left:5%; padding-right:5%;}
+	section#hero article {width:50%;}
+}
+@media (max-width: 959px){
+	.card {width:50%;}
+}
